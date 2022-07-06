@@ -50,7 +50,7 @@ func uploadFileToS3(
 	file []byte,
 ) error {
 
-	// Get the fileName from Path
+	// Create a unique file name
 	fileName := uuid.New().String() + ".png"
 
 	// Get the file info
